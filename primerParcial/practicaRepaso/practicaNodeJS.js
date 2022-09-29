@@ -111,7 +111,7 @@ const MANTENIMIENTO = [
         idVehiculo: 6,
         idConcepto: 1,
         fechaMantenimiento: fecha.getDate(),
-        detalle: 'No se recibieron propinas'
+        detalle: 'Propina de $1'
     }, 
     {
         id: 6,
