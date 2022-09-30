@@ -127,18 +127,28 @@ const MANTENIMIENTO = [
 //Mostrar autos
 console.log('DATOS ALMACENADOS DE LOS VEHICULOS DEL SISTEMA');
 for (let i = 0; i < AUTOS.length; i++) {
-    console.log(AUTOS[i]);
+    console.log('ID: ' + AUTOS[i].id + ' | Estado: ' + AUTOS[i].descripcion + ' | Placa: ' + AUTOS[i].placa + ' | Color: ' + AUTOS[i].color);
 }
 //Mostrar conceptos
 console.log('---------------------------------------');
 console.log('DATOS ALMACENADOS DE LOS CONCEPTOS');
-for (let i = 0; i < CONCEPTOS.length; i++) {
-    console.log(CONCEPTOS[i]);
+let cont = 0;
+while (cont < CONCEPTOS.length) {
+    console.log('ID: ' + CONCEPTOS[cont].id + ' | Descripcion: ' + CONCEPTOS[cont].descripcion);
+    cont++;
 }
 
 //Mostrar MANTENIMIENTO
 console.log('---------------------------------------');
 console.log('DATOS ALMACENADOS DE LOS MANTENIMIENTOS REALIZADOS');
+/*
 for (let i = 0; i < MANTENIMIENTO.length; i++) {
     console.log(MANTENIMIENTO[i]);
-}
+}*/
+let contador = 0
+do {
+    console.log('ID: ' + MANTENIMIENTO[contador].id + ' | ID VEHICULO: ' + MANTENIMIENTO[contador].idVehiculo 
+    + ' | ID CONCEPTO: ' + MANTENIMIENTO[contador].idConcepto + ' | FECHA MANTENIMIENTO:' + MANTENIMIENTO[contador].fechaMantenimiento 
+    + ' | DETALLES: ' + MANTENIMIENTO[contador].detalle);
+    contador++;
+} while (contador < MANTENIMIENTO.length);
