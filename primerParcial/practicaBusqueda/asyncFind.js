@@ -1,6 +1,8 @@
+//Async/Await Busqueda de datos
+
 //Importacion de los datos del archivo de datos
 const {autos, mantenimientos} = require('./datos');
-//Async busqueda de datos
+//Creacion de funcion Async para usar la propiedad await
 async function buscarAutoPorId(id){
     //Creacion del objeto de clase auto para usar el metodo FIND
     const auto = autos.find((auto)=> auto.id===id);
