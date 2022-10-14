@@ -1,3 +1,10 @@
+/**
+ * Created by: Lenny Bryan Alvarado Castro  @MrFlexEc
+ * Supported by: Ing. John Cevallos @joancema
+ * Topic: CRUD ft MongoDB, NodeJS
+ * Date: 14-nov-2022
+ */
+
 //Importacion de la libreria mongoose
 const mongoose = require('mongoose');
 //creacion de variable para la conexion con la base de datos MongoDB
