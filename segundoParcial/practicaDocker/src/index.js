@@ -1,7 +1,8 @@
 
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config()
+require('dotenv').config()
+
 const app = express();
 const PUERTO =  process.env.PORT || 9000;
 const userRoutes = require("./routes");
@@ -13,9 +14,8 @@ app.get("/", (req, res) =>{
     res.send("Welcome to my API");
 })
 
-mongoose
-.connect(process.env.MONGODB_URL)
-.then(()=> console.log('Conectado a MongoDB ATLAS'))
+mongoose.connect("mongodb://localhost:27017")
+.then(()=> console.log('Conectado a MongoDB'))
 .catch((error)=> console.log(error))
 
 app.listen(PUERTO,()=>{
