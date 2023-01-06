@@ -16,7 +16,12 @@ const mantenimientoSchema = Schema({
         required: [true, 'Se debe registrar fecha del mantenimiento']
     }, 
     detalle:{type:String}, 
-    precio:{type:Number}
+    precio:{type:Number},
+    status:{
+        type: Boolean,
+        default: true,
+        required: true
+    }
 })
 
 module.exports = model('Mantenimiento', mantenimientoSchema);
